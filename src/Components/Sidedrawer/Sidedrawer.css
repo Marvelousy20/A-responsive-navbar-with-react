@@ -1,0 +1,46 @@
+.sidedrawer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:80%; 
+    background: #fff;
+    box-shadow:2px 0px 5px rgba(0,0,0,.5);
+    z-index: 2;
+    transform: translateX(-105%);
+    transition: transform .3s ease-out;
+}
+
+.sidedrawer.open{
+    transform: translateX(0);
+}
+
+
+.sidedrawer ul{
+    list-style: none;
+}
+
+ul li.sidebar-list a{
+    list-style: none;
+    text-decoration: none;
+}
+
+ul li.sidebar-list a:hover,
+ul li.sidebar-list a:focus{
+    color: orange
+}
+
+.sidedrawer-ul{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.sidedrawer-ul li{
+    margin: 8px 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+

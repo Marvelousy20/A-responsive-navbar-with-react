@@ -1,0 +1,58 @@
+.toolbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 30px;
+    width: 100%;
+    background: rgba(255, 0, 0, 1);
+    height: 70px;
+}
+
+.toolbar-nav{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.logo a:hover,
+.logo a:focus{
+    color: orange;
+} 
+
+.toolbar-ul{
+    list-style: none;
+    display: flex;
+}
+
+.toolbar-ul li{
+    margin: 0 10px;
+}
+
+.toolbar-ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.toolbar-ul li a:hover,
+.toolbar-ul li a:focus {
+    color: orange;
+}
+
+.spacer{
+    flex: 1;
+}
+
+@media all and (max-width: 650px) {
+    .toolbar-ul{
+        display: none;
+    }
+}
